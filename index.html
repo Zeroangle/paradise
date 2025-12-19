@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سیستەمی دانەوەی باقی</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <h1>ژمێریاری دانەوەی باقی</h1>
+
+        <div class="input-group">
+            <label for="totalAmount">کۆی گشتی:</label>
+            <input type="number" id="totalAmount" placeholder="بۆ نموونە: 8250">
+        </div>
+
+        <div class="input-group">
+            <label for="amountPaid">بری پارەی دراو:</label>
+            <input type="number" id="amountPaid" placeholder="بۆ نموونە: 50000">
+        </div>
+
+        <div class="cash-buttons">
+            <p>زیادکردنی خێرای پارەی وەرگیراو:</p>
+            <div class="button-grid">
+                <button class="cash-btn" data-value="50000" title="کلیک بکە یان دوگمەی 5 لە تەختەکلیل"><img src="images/50000.jpg" alt="50000 IQD"></button>
+                <button class="cash-btn" data-value="25000" title="کلیک بکە یان دوگمەی 4 لە تەختەکلیل"><img src="images/25000.jpg" alt="25000 IQD"></button>
+                <button class="cash-btn" data-value="10000" title="کلیک بکە یان دوگمەی 3 لە تەختەکلیل"><img src="images/10000.jpg" alt="10000 IQD"></button>
+                <button class="cash-btn" data-value="5000" title="کلیک بکە یان دوگمەی 2 لە تەختەکلیل"><img src="images/5000.jpg" alt="5000 IQD"></button>
+                <button class="cash-btn" data-value="1000" title="کلیک بکە یان دوگمەی 1 لە تەختەکلیل"><img src="images/1000.jpg" alt="1000 IQD"></button>
+                <button class="cash-btn" data-value="500"><img src="images/500.jpg" alt="500 IQD"></button>
+                <button class="cash-btn" data-value="250"><img src="images/250.jpg" alt="250 IQD"></button>
+            </div>
+            <div style="margin-top: 15px; font-size: 14px; color: #666; text-align: center;">
+                💡 بەکارهێنانی خێرا: دوگمەکانی ١-٥ لە تەختەکلیل | Enter بۆ ژماردن | Escape بۆ پاککردنەوە
+            </div>
+        </div>
+
+        <button id="calculateBtn" title="دوگمەی Enter لە تەختەکلیل بەکاربهێنە">ژماردنی باقی</button>
+
+        <div id="result">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
